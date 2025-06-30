@@ -7,7 +7,10 @@
      <link rel="stylesheet" href="styles/output.css">
     <title>Yachi Game</title>
     <style>
-        
+        .beyu{
+            border-inline: 1px dashed white;
+      
+        }
   .sliding-bg {
     width: 100%;
     height: 100vh;
@@ -29,9 +32,9 @@
         </div>
         <div class="board">
             <div id="road" class="overflow-clip relative road w-[360px] h-[100vh] bg-gray-600 grid grid-cols-3">
-                <div class="border border-white"></div>
-                <div class="border border-white"></div>
-                <div class="border border-white"></div>
+                <div class=" beyu"></div>
+                <div class=" beyu"></div>
+                <div class=" beyu"></div>
                 <img id="player-car" src="./img/colombus.png" class="player-car object-contain w-[65px] absolute bottom-2 left-1/2 transform -translate-x-1/2 transition ease-in-out duration-300 center z-99" />
                 <!-- <img id="enemy-car" src="./img/cone.png" class="enemy-car w-1/4 rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 center" />
                 <img id="enemy-car" src="./img/cone.png" class="enemy-car w-1/4 rounded-lg absolute left-3/3 transform -translate-x-3/3 top-20 right" />

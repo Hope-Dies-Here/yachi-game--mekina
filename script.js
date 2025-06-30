@@ -125,14 +125,17 @@ function collision(enemyCarPos, car) {
 }
 
 let ps = []
-const carImages = ["image.png", "enemy.png", "lambo.png", "colombus.png", "lambo.png", "redone.png"]
+const carImages = ["image.png", "enemy.png", "lambo.png", "colombus.png", "lambo.png", "redone.png", "motor.png"]
 function generateBeyene() { 
     const p = document.createElement("img")
-    p.src = `./img/${carImages[Math.floor(Math.random() * carImages.length)]}` //carImages[Math.floor(Math.random() * carImages.length)]
+    const selectedImage = carImages[Math.floor(Math.random() * carImages.length)]
+    // selectedImage == "motor.png" ? "w-60" : "w-70"
+    p.src = `./img/${selectedImage}` //carImages[Math.floor(Math.random() * carImages.length)]
     p.style.top = '-300px'
     const index = pos[Math.floor(Math.random() * 3)];
-    p.className = `absolute w-[70px] ${index.left} object-contain transform transition ease-in-out duration-300 ${index.translate} ${index.position}`
+    p.className = `z-999 absolute w-[70px] ${index.left} object-contain transform transition ease-in-out duration-300 ${index.translate} ${index.position}`
     p.id = Date.now()
+    selectedImage == "motor.png" ? p.style.width = "50px" : ""
     document.getElementById("road").appendChild(p)
     ps.push({ element: p, top: -300 })
     return p
