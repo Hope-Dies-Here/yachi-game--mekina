@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+     <link rel="stylesheet" href="styles/output.css">
+    <title>Yachi Game</title>
+    <style>
+        
+  .sliding-bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/house-long.png');
+    background-repeat: repeat-y;
+    background-size: cover; /* or contain/fixed width if needed */
+  
+  }
+
+  
+    </style>
+</head>
+<body class="overflow-clip fixed top-0 left-0 right-0">
+    <div class="container flex justify-center overflow-y-clip slidng-bg">
+        <div id="sliding-bg" class="left bg-white w-full grid justify-end sliding-bg">
+            <!-- <img src="./img/house-long.png" class="h-full object-contain village" />
+            <img src="./img/house-long.png" class="h-full object-contain village" /> -->
+
+        </div>
+        <div class="board">
+            <div id="road" class="overflow-clip relative road w-[360px] h-[100vh] bg-gray-600 grid grid-cols-3">
+                <div class="border border-white"></div>
+                <div class="border border-white"></div>
+                <div class="border border-white"></div>
+                <img id="player-car" src="./img/colombus.png" class="player-car object-contain w-[65px] absolute bottom-2 left-1/2 transform -translate-x-1/2 transition ease-in-out duration-300 center z-99" />
+                <!-- <img id="enemy-car" src="./img/cone.png" class="enemy-car w-1/4 rounded-lg absolute top-0 left-1/2 transform -translate-x-1/2 center" />
+                <img id="enemy-car" src="./img/cone.png" class="enemy-car w-1/4 rounded-lg absolute left-3/3 transform -translate-x-3/3 top-20 right" />
+                <img id="enemy-car" src="./img/cone.png" class="enemy-car w-1/4 rounded-lg absolute left-3/3 transform -translate-x-3/3 -top-220 right" />
+                <img id="enemy-car" src="./img/cone.png" class="enemy-car w-1/4 rounded-lg absolute left-1/2 transform -translate-x-1/2 -top-90 center" />
+                <img id="enemy-car" src="./img/cone.png" class="enemy-car w-1/4 rounded-lg absolute left-1/3 transform -translate-x-3/3 -top-160 left" />
+                <img id="enemy-car" src="./img/cone.png" class="enemy-car w-1/4 rounded-lg absolute left-1/2 transform -translate-x-1/2 -top-270 center" /> -->
+            </div>
+        </div>
+        <div id="sliding-bg" class="left bg-white w-full grid justify-end sliding-bg">
+            <!-- <img src="./img/house-long.png" class="h-full object-contain village" />
+            <img src="./img/house-long.png" class="h-full object-contain village" /> -->
+
+        </div>
+
+    </div>
+
+    <p class="top-5 left-1/2 transform -translate-x-1/2 fixed text-white text-lg font-bold bg-gray-900 px-3 py-1 rounded-2xl">Score: <span id="score">0</span></p>
+    <script src="script.js"></script>
+</body>
+</html>
