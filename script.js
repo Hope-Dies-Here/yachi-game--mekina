@@ -216,7 +216,7 @@ function update() {
             // crash.innerText = "Chrash"
             crash.style.left = enmCarPos.left + "px" 
             console.log(myCarPos);
-            crash.style.bottom =  60 + "px"
+            crash.style.bottom =  90 + "px"
             // console.log(playerCar.style);
             document.getElementById("road").appendChild(crash)
 
