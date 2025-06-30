@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
      <link rel="stylesheet" href="styles/output.css">
+     <link rel="preload" as="audio" href="./sound/game-music.mp3" type="audio/mpeg">
     <title>Yachi Game</title>
     <style>
         .beyu{
@@ -52,6 +53,7 @@
 
     </div>
 
+    <button id="start" class="bg-fuchsia-700 border-amber-100 border-2 w-55 h-30 cursor-pointer fixed flex justify-center items-center z-9999 top-1/2 left-1/2 transform -translate-x-1/2 text-white text-lg font-bold px-3 py-1 rounded-2xl">Start</button>
     <p class="top-5 left-1/2 transform -translate-x-1/2 fixed text-white text-lg font-bold bg-gray-900 px-3 py-1 rounded-2xl">Score: <span id="score">0</span></p>
     <script src="script.js"></script>
 </body>
